@@ -11,7 +11,13 @@ const SideDrawer = (props) => {
       open={props.open}
       onClose={() => props.onClose(false)}
       >
-        hello
+        <List component='nav'>
+            <ListItem button onClick={() => console.log()}>Event Starts In</ListItem>
+            <ListItem button onClick={() => console.log()}>Venue Info</ListItem>
+            <ListItem button onClick={() => console.log()}>Highlights</ListItem>
+            <ListItem button onClick={() => console.log()}>Pricing</ListItem>
+            <ListItem button onClick={() => console.log()}>Location</ListItem>
+        </List>
       </Drawer>
     </div>
   );
